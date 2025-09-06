@@ -1,7 +1,8 @@
 // 成就界面视图对象
 const AchievementView = {
-    totalSlots: 16, // 固定成就槽数量
-    slotsPerRow: 4, // 每行成就数量
+    totalSlots: 32, // 固定成就槽数量（4组 * 每组8个）
+    slotsPerGroup: 8, // 每组显示 8 个
+    categories: ["战斗类", "探索类", "收集类", "隐藏类"],
 
     render: (container, engine) => {
         const L = engine.localization;
@@ -9,22 +10,24 @@ const AchievementView = {
         const unlockedIds = engine.saveManager.currentUser.achievementArray;
         const lockedIcon = engine.dataManager.getLockedAchievementIcon();
 
-        // 取前16个成就，如果不足16个，用空占位
+        // 取前32个成就，如果不足32个，用空占位
         const achievementsToRender = allAchievements.slice(0, AchievementView.totalSlots);
         while (achievementsToRender.length < AchievementView.totalSlots) {
             achievementsToRender.push(null); // 空占位
         }
 
-        // 将成就按行分组，每行4个
-        const rows = [];
-        for (let i = 0; i < achievementsToRender.length; i += AchievementView.slotsPerRow) {
-            rows.push(achievementsToRender.slice(i, i + AchievementView.slotsPerRow));
+        // 将成就按组分，每组8个（共4组）
+        const groups = [];
+        for (let i = 0; i < achievementsToRender.length; i += AchievementView.slotsPerGroup) {
+            groups.push(achievementsToRender.slice(i, i + AchievementView.slotsPerGroup));
         }
 
-        // 每行生成 HTML
-        const rowsHTML = rows.map((row, rowIndex) => {
-            const rowCategory = `类别 ${rowIndex + 1}`; // 可根据需要修改成真实类别名称
-            const rowItemsHTML = row.map(ach => {
+        // 每组生成 HTML
+        const groupsHTML = groups.map((group, groupIndex) => {
+            const rowCategory = AchievementView.categories[groupIndex] || `类别 ${groupIndex + 1}`;
+
+            // 使用战斗类前四个成就槽样式参数
+            const itemsHTML = group.map((ach, index) => {
                 if (ach) {
                     const isUnlocked = unlockedIds.includes(ach.id);
                     const statusClass = isUnlocked ? 'unlocked' : 'locked';
@@ -47,10 +50,10 @@ const AchievementView = {
             }).join('');
 
             return `
-                <div class="achievement-row">
+                <div class="achievement-group">
                     <h2 class="row-category">${rowCategory}</h2>
-                    <div class="achievement-row-items">
-                        ${rowItemsHTML}
+                    <div class="achievement-group-items">
+                        ${itemsHTML}
                     </div>
                 </div>
             `;
@@ -61,7 +64,8 @@ const AchievementView = {
                 .achievement-view {
                     display: flex;
                     flex-direction: column;
-                    padding: 20px;
+                    height: 100vh;
+                    overflow: hidden;
                 }
 
                 .navbar {
@@ -70,8 +74,11 @@ const AchievementView = {
                     justify-content: space-between;
                     align-items: center;
                     padding: 0 40px;
-                    position: relative;
-                    z-index: 10;
+                    position: sticky;
+                    top: 0;
+                    z-index: 20;
+                    background: rgba(0, 0, 0, 0.6);
+                    backdrop-filter: blur(4px);
                 }
 
                 .menu-button {
@@ -98,40 +105,56 @@ const AchievementView = {
                     pointer-events: none;
                 }
 
-                /* 每行成就容器 */
-                .achievement-row {
-                    margin-bottom: 40px;
+                .achievement-grid-container {
+                    flex: 1;
+                    overflow-y: auto;
+                    padding: 20px 40px;
+                    box-sizing: border-box;
+                }
+
+                .achievement-grid-container::-webkit-scrollbar {
+                    display: none;
+                }
+                .achievement-grid-container {
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                }
+
+                .achievement-group {
+                    margin-bottom: 50px;
                 }
 
                 .row-category {
                     text-align: center;
                     font-size: 1.6em;
                     color: #ffd700;
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
                     text-shadow: 1px 1px 3px #000;
                 }
 
-                /* 每行成就格子容器 */
-                .achievement-row-items {
-                    display: flex;
-                    justify-content: space-around; /* 每行均分空间 */
-                    flex-wrap: wrap;
+                /* 使用战斗类前四个成就槽布局 */
+                .achievement-group-items {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
                     gap: 25px;
+                    justify-items: center;
                 }
 
                 .achievement-item {
                     background-color: rgba(0, 0, 0, 0.4);
                     border-radius: 15px;
-                    padding: 20px;
+                    padding: 15px;
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
-                    gap: 15px;
+                    justify-content: flex-start;
                     transition: all 0.3s ease;
                     border: 2px solid transparent;
                     width: 100%;
                     max-width: 220px;
-                    min-height: 130px;
+                    height: 220px;
                     box-sizing: border-box;
+                    text-align: center;
                 }
 
                 .achievement-item.empty {
@@ -156,15 +179,24 @@ const AchievementView = {
                     object-fit: cover;
                     border: 3px solid #fff;
                     flex-shrink: 0;
+                    margin-bottom: 10px;
                 }
 
                 .achievement-item.locked .achievement-icon {
                     filter: grayscale(100%) brightness(0.7);
                 }
 
+                .achievement-info {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 .achievement-info h3 {
                     margin: 0 0 8px 0;
-                    font-size: 1.4em;
+                    font-size: 1.2em;
                     color: #fff;
                 }
 
@@ -174,7 +206,7 @@ const AchievementView = {
 
                 .achievement-info p {
                     margin: 0;
-                    font-size: 1em;
+                    font-size: 0.9em;
                     color: #ccc;
                     line-height: 1.4;
                 }
@@ -196,7 +228,7 @@ const AchievementView = {
                 </nav>
 
                 <div class="achievement-grid-container">
-                    ${rowsHTML}
+                    ${groupsHTML}
                 </div>
             </div>
         `;
