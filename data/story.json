@@ -1923,7 +1923,100 @@
                 "type": "text",
                 "name": "narrator",
                 "inherit":1390,
-                "onNext": { "ending": true }
+                "onNext": { "setNode": 1 }
+        },
+
+
+
+
+
+
+
+
+
+"1": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":2},
+                                {"targetNode":8}] }
+        },
+"2": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":3},
+                                {"targetNode":3},
+                                {"targetNode":6}] }
+        },
+"3": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":4},
+                                {"targetNode":25}] }
+        },
+"4": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":5},
+                                {"targetNode":25}] }
+        },
+"5": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":25},
+                                {"targetNode":25},
+                                {"targetNode":25}] }
+        },
+"6": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":3},
+                                {"targetNode":7}] }
+        },
+"7": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":25},
+                                {"targetNode":25}] }
+        },
+"8": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":5},
+                                {"targetNode":9}] }
+        },
+"9": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":10},
+                                {"targetNode":11}] }
+        },
+"10": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":25},
+                                {"targetNode":25}] }
+        },
+"11": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "choice":[
+                                {"targetNode":25},
+                                {"targetNode":25}] }
+        },
+"25": {
+                "type": "choices",
+                "name": "narrator",
+                "onNext": { "ending":true }
         }
 
     }
