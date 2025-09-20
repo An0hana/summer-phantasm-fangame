@@ -1,45 +1,27 @@
 {
     "achievements": [
         {
-            "id": "start_game",
-            "name": "新的开始",
-            "description": "成功启动游戏并进入主菜单。",
+            "id": "旅程伊始",
+            "name": "旅程伊始",
+            "description": "旅程的起点",
             "icon": "./assets/img/achievements/test.png"
         },
         {
-            "id": "first_choice",
-            "name": "命运的十字路口",
-            "description": "在夏夜的微光中做出第一个重要的选择。",
+            "id": "遇见",
+            "name": "遇见",
+            "description": "缘分的约定",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "传说？",
+            "name": "传说？",
+            "description": "故事，还是现实？传说，还是历史？",
             "icon": "./assets/img/achievements/test.png"
         },
         {
-            "id": "finish_chapter1",
-            "name": "序章的尾声",
-            "description": "完成第一章的全部剧情。",
-            "icon": "./assets/img/achievements/test.png"
-        },
-        {
-            "id": "secret_ending",
-            "name": "被隐藏的真相",
-            "description": "达成一个隐藏结局。",
-            "icon": "./assets/img/achievements/test.png"
-        },
-        {
-            "id": "first_choice1",
-            "name": "命运的十字路口1",
-            "description": "在夏夜的微光中做出第一个重要的选择。",
-            "icon": "./assets/img/achievements/test.png"
-        },
-        {
-            "id": "finish_chapter1",
-            "name": "序章的尾声",
-            "description": "完成第一章的全部剧情。",
-            "icon": "./assets/img/achievements/test.png"
-        },
-        {
-            "id": "secret_ending",
-            "name": "被隐藏的真相",
-            "description": "达成一个隐藏结局。",
+            "id": "嗨",
+            "name": "嗨",
+            "description": "烟花闪烁的夜晚，幽灵浮现在心间",
             "icon": "./assets/img/achievements/test.png"
         },
         {
@@ -187,10 +169,118 @@
             "icon": "./assets/img/achievements/test.png"
         },
         {
+            "id": "first_choice1",
+            "name": "命运的十字路口1",
+            "description": "在夏夜的微光中做出第一个重要的选择。",
+            "icon": "./assets/img/achievements/test.png"
+        },
+        {
+            "id": "finish_chapter1",
+            "name": "序章的尾声",
+            "description": "完成第一章的全部剧情。",
+            "icon": "./assets/img/achievements/test.png"
+        },
+        {
             "id": "secret_ending",
             "name": "被隐藏的真相",
             "description": "达成一个隐藏结局。",
             "icon": "./assets/img/achievements/test.png"
+        },
+        {
+            "id": "secret_ending",
+            "name": "被隐藏的真相",
+            "description": "达成一个隐藏结局。",
+            "icon": "./assets/img/achievements/test.png"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
+        },
+        {
+            "id": "",
+            "name": "",
+            "description": "",
+            "icon": "./assets/img/achievements/"
         }
     ],
     "lockedIcon": "./assets/img/achievements/test2.png"
