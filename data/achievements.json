@@ -4,314 +4,314 @@
             "id": "旅程伊始",
             "name": "旅程伊始",
             "description": "旅程的起点，梦开始的地方",
-            "icon": "./assets/img/achievements/旅程伊始.png"
+            "icon": "./assets/img/achievements/lvchengyishi.png"
         },
         {
             "id": "遇见",
             "name": "遇见",
             "description": "缘分的约定，命运使我们相遇",
-            "icon": "./assets/img/achievements/遇见.png"
+            "icon": "./assets/img/achievements/yujian.png"
         },
         {
             "id": "传说？",
             "name": "传说？",
             "description": "故事，还是现实；传说，还是历史。",
-            "icon": "./assets/img/achievements/传说.png"
+            "icon": "./assets/img/achievements/chuanshuo.png"
         },
         {
             "id": "嗨",
             "name": "从烟花中走来",
             "description": "烟花闪烁的夜晚，幽灵浮现在心间",
-            "icon": "./assets/img/achievements/嗨.png"
+            "icon": "./assets/img/achievements/hai.png"
         },
         {
             "id": "恨",
             "name": "恨み",
             "description": "我好恨啊",
-            "icon": "./assets/img/achievements/恨.png"
+            "icon": "./assets/img/achievements/hen.png"
         },
         {
             "id": "触碰往事的回忆",
             "name": "触碰往事的回忆",
             "description": "每个人都有不为人知的过去，故事与伤痛并存",
-            "icon": "./assets/img/achievements/触碰往事的回忆.png"
+            "icon": "./assets/img/achievements/chupengwangshidehuiyi.png"
         },
         {
             "id": "影子",
             "name": "追寻烟花的影子",
             "description": "真的要追下去吗",
-            "icon": "./assets/img/achievements/影子.png"
+            "icon": "./assets/img/achievements/yingzi.png"
         },
         {
             "id": "想做的事",
             "name": "想做的事",
             "description": "大丈夫です，去做你想做的事吧！",
-            "icon": "./assets/img/achievements/想做的事.png"
+            "icon": "./assets/img/achievements/xiangzuodeshi.png"
         },
         {
             "id": "票据",
             "name": "柜台里的票据",
             "description": "柜台里的票据，总会在某一天给某个人带来快乐",
-            "icon": "./assets/img/achievements/票据.png"
+            "icon": "./assets/img/achievements/piaoju.png"
         },
         {
             "id": "书里千秋",
             "name": "书里千秋",
             "description": "图书馆之旅，陪友也去图书馆",
-            "icon": "./assets/img/achievements/书里千秋.png"
+            "icon": "./assets/img/achievements/shuliqianqiu.png"
         },
         {
             "id": "好吃的",
             "name": "好吃的",
             "description": "及时行乐，反正活不久了",
-            "icon": "./assets/img/achievements/好吃的.png"
+            "icon": "./assets/img/achievements/haochide.png"
         },
         {
             "id": "复诊",
             "name": "复诊",
             "description": "陪凉去医院复诊，见证人生百态",
-            "icon": "./assets/img/achievements/复诊.png"
+            "icon": "./assets/img/achievements/fuzhen.png"
         },
         {
             "id": "命运循环",
             "name": "如果可以-命运循环",
             "description": "如果反抗的结果是更多的欺压，那反抗是否有意义",
-            "icon": "./assets/img/achievements/命运循环.png"
+            "icon": "./assets/img/achievements/mingyunxunhuan.png"
         },
         {
             "id": "希望",
             "name": "一点点的念想和希望",
             "description": "最黑暗的时光，也有一点坚持的理由",
-            "icon": "./assets/img/achievements/希望.png"
+            "icon": "./assets/img/achievements/xiwang.png"
         },
         {
             "id": "孤独之舞",
             "name": "孤独之舞",
             "description": "愚弄命运的舞步",
-            "icon": "./assets/img/achievements/孤独之舞.png"
+            "icon": "./assets/img/achievements/guduzhiwu.png"
         },
         {
             "id": "如雪花飘零",
             "name": "如雪花飘零",
             "description": "FATE#1达成结局：消失于夜色",
-            "icon": "./assets/img/achievements/如雪花飘零.png"
+            "icon": "./assets/img/achievements/ruxuehuapiaoling.png"
         },
         {
             "id": "路在何方",
             "name": "我该去哪，路在何方",
             "description": "天地苍茫，无处容身",
-            "icon": "./assets/img/achievements/路在何方.png"
+            "icon": "./assets/img/achievements/luzaihefang.png"
         },
         {
             "id": "安宁",
             "name": "安宁",
             "description": "FATE#2达成结局：解脱",
-            "icon": "./assets/img/achievements/安宁.png"
+            "icon": "./assets/img/achievements/anning.png"
         },
         {
             "id": "第一次飞行",
             "name": "第一次飞行",
             "description": "第一次飞行，不一样的夜空",
-            "icon": "./assets/img/achievements/第一次飞行.png"
+            "icon": "./assets/img/achievements/diyicifeixing.png"
         },
         {
             "id": "命运石之门",
             "name": "命运石之门",
             "description": "打开新世界的大门",
-            "icon": "./assets/img/achievements/命运石之门.png"
+            "icon": "./assets/img/achievements/mingyunshizhimen.png"
         },
         {
             "id": "真与假",
             "name": "真与假",
             "description": "站在你面前的人，是真实的吗",
-            "icon": "./assets/img/achievements/真与假.png"
+            "icon": "./assets/img/achievements/zhenyujia.png"
         },
         {
             "id": "迷失于心魔",
             "name": "迷失于心魔",
             "description": "FATE#3达成结局：迷失于心魔",
-            "icon": "./assets/img/achievements/迷失于心魔.png"
+            "icon": "./assets/img/achievements/mishiyuxinmo.png"
         },
         {
             "id": "掌舵手",
             "name": "掌舵手",
             "description": "我的未来我做主",
-            "icon": "./assets/img/achievements/掌舵手.png"
+            "icon": "./assets/img/achievements/zhangduoshou.png"
         },
         {
             "id": "温暖的家",
             "name": "温暖的家，最近的遥远",
             "description": "这是我的家，永远温暖的家",
-            "icon": "./assets/img/achievements/温暖的家.png"
+            "icon": "./assets/img/achievements/wennuandejia.png"
         },
         {
             "id": "不期",
             "name": "不期",
             "description": "MID#1达成结局：不期。生活总有遗憾，感谢与你相见",
-            "icon": "./assets/img/achievements/不期.png"
+            "icon": "./assets/img/achievements/buqi.png"
         },
         {
             "id": "秘密行动",
             "name": "秘密行动",
             "description": "准备调查",
-            "icon": "./assets/img/achievements/秘密行动.png"
+            "icon": "./assets/img/achievements/mimixingdong.png"
         },
         {
             "id": "生与死",
             "name": "生与死",
             "description": "四人月下独白，跨越千年的讨论",
-            "icon": "./assets/img/achievements/生与死.png"
+            "icon": "./assets/img/achievements/shengyusi.png"
         },
         {
             "id": "失忆",
             "name": "失忆",
             "description": "人会失忆，社会也会，历史更会",
-            "icon": "./assets/img/achievements/失忆.png"
+            "icon": "./assets/img/achievements/shiyi.png"
         },
         {
             "id": "为了忘却的纪念",
             "name": "为了忘却的纪念",
             "description": "MID#2达成结局：为了忘却的纪念",
-            "icon": "./assets/img/achievements/为了忘却的纪念.png"
+            "icon": "./assets/img/achievements/weilewangquedejinian.png"
         },
         {
             "id": "我即史官",
             "name": "我即史官-大侦探",
             "description": "从迷雾中窥探真相",
-            "icon": "./assets/img/achievements/我即史官.png"
+            "icon": "./assets/img/achievements/wojishiguan.png"
         },
         {
             "id": "我自己",
             "name": "我自己",
             "description": "你好，我自己，我看到你了",
-            "icon": "./assets/img/achievements/我自己.png"
+            "icon": "./assets/img/achievements/woziji.png"
         },
         {
             "id": "名为正义",
             "name": "名为正义",
             "description": "真的是正义么，真的会有用么",
-            "icon": "./assets/img/achievements/名为正义.png"
+            "icon": "./assets/img/achievements/mingweizhengyi.png"
         },
         {
             "id": "审判",
             "name": "审判",
             "description": "RESISTANT#1达成结局：审判",
-            "icon": "./assets/img/achievements/审判.png"
+            "icon": "./assets/img/achievements/shenpan.png"
         },
         {
             "id": "新生",
             "name": "新生",
             "description": "谢谢你，祝福你，带着我，继续走",
-            "icon": "./assets/img/achievements/新生.png"
+            "icon": "./assets/img/achievements/xinsheng.png"
         },
         {
             "id": "未来",
             "name": "未来",
             "description": "RESISTANT#2达成结局：未来，无限可能",
-            "icon": "./assets/img/achievements/未来.png"
+            "icon": "./assets/img/achievements/weilai.png"
         },
         {
             "id": "世界线",
             "name": "世界线-隐藏剧情",
             "description": "恭喜你触发隐藏剧情，这里有作者的一点点小心意",
-            "icon": "./assets/img/achievements/世界线.png"
+            "icon": "./assets/img/achievements/shijiexian.png"
         },
         {
             "id": "咖啡",
             "name": "咖啡",
             "description": "不太热的天，喝一杯咖啡",
-            "icon": "./assets/img/achievements/咖啡.png"
+            "icon": "./assets/img/achievements/kafei.png"
         },
         {
             "id": "来做饭",
             "name": "来做饭",
             "description": "懒洋洋当大厨",
-            "icon": "./assets/img/achievements/来做饭.png"
+            "icon": "./assets/img/achievements/laizuofan.png"
         },
         {
             "id": "喵",
             "name": "喵",
             "description": "可爱小猫咪，Miss.Christine",
-            "icon": "./assets/img/achievements/喵.png"
+            "icon": "./assets/img/achievements/miao.png"
         },
         {
             "id": "爱意随风起",
             "name": "爱意随风起",
             "description": "爱意随风起，风止意难平",
-            "icon": "./assets/img/achievements/爱意随风起.png"
+            "icon": "./assets/img/achievements/aiyisuifengqi.png"
         },
         {
             "id": "甜蜜的饭",
             "name": "甜蜜的饭",
             "description": "甜蜜的饭，甜蜜的梦",
-            "icon": "./assets/img/achievements/甜蜜的饭.png"
+            "icon": "./assets/img/achievements/tianmidefan.png"
         },
         {
             "id": "礼物",
             "name": "礼物",
             "description": "谢谢你的礼物",
-            "icon": "./assets/img/achievements/礼物.png"
+            "icon": "./assets/img/achievements/liwu.png"
         },
         {
             "id": "为你撑伞",
             "name": "为你撑伞",
             "description": "一把伞，往后余生",
-            "icon": "./assets/img/achievements/为你撑伞.png"
+            "icon": "./assets/img/achievements/weinichengsan.png"
         },
         {
             "id": "社区装点家",
             "name": "社区装点家",
             "description": "用画作点亮城市的一片区域",
-            "icon": "./assets/img/achievements/社区装点家.png"
+            "icon": "./assets/img/achievements/shequzhuangdianjia.png"
         },
         {
             "id": "远行",
             "name": "远行",
             "description": "踏向远方的旅途，寄向未来的信件",
-            "icon": "./assets/img/achievements/远行.png"
+            "icon": "./assets/img/achievements/yuanxing.png"
         },
         {
             "id": "盛夏",
             "name": "盛夏",
             "description": "愿美好停留于这个曾用指尖弹出的盛夏",
-            "icon": "./assets/img/achievements/盛夏.png"
+            "icon": "./assets/img/achievements/shengxia.png"
         },
         {
             "id": "为梦想谱曲",
             "name": "为梦想谱曲",
             "description": "为梦想谱曲，为幸福歌唱",
-            "icon": "./assets/img/achievements/为梦想谱曲.png"
+            "icon": "./assets/img/achievements/weimengxiangpuqu.png"
         },
         {
             "id": "夜空中最亮的星",
             "name": "夜空中最亮的星",
             "description": "最亮的烟花，最深的祝福",
-            "icon": "./assets/img/achievements/夜空中最亮的星.png"
+            "icon": "./assets/img/achievements/yekongzhongzuiliangdexing.png"
         },
         {
             "id": "未来计划",
             "name": "未来计划",
             "description": "未来计划，要做什么呢",
-            "icon": "./assets/img/achievements/未来计划.png"
+            "icon": "./assets/img/achievements/weilaijihua.png"
         },
         {
             "id": "一辈子乐队",
             "name": "来和我组一辈子乐队吧",
             "description": "来和我组一辈子乐队吧，哈哈哈哈哈",
-            "icon": "./assets/img/achievements/一辈子乐队.png"
+            "icon": "./assets/img/achievements/yibeiziyuedui.png"
         },
         {
             "id": "最牢之人",
             "name": "最牢之人",
             "description": "精准避开了所有精美小游戏，倒霉也是一种天赋呢~",
-            "icon": "./assets/img/achievements/最牢之人.png"
+            "icon": "./assets/img/achievements/zuilaozhiren.png"
         },
         {
             "id": "最可恶之人",
             "name": "最可恶之人",
             "description": "你怎么这么自私！（怒！）呸~***我让你飞起来！！！",
-            "icon": "./assets/img/achievements/最可恶之人.png"
+            "icon": "./assets/img/achievements/zuikewuzhiren.png"
         }
     ],
-    "lockedIcon": "./assets/img/achievements/未解锁.png"
+    "lockedIcon": "./assets/img/achievements/weijiesuo.png"
 }
