@@ -1,0 +1,46 @@
+{
+  "name": "summer-phantasm-fangame",
+  "version": "1.0.0",
+  "description": "基于 HTML/CSS/JavaScript 的网页叙事互动（AVG）项目，内嵌独立的 Platformer 小游戏。",
+  "main": "electron-main.js",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/An0hana/summer-phantasm-fangame.git"
+  },
+  "bugs": { "url": "https://github.com/An0hana/summer-phantasm-fangame/issues" },
+  "homepage": "https://github.com/An0hana/summer-phantasm-fangame#readme",
+  "scripts": {
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:zip": "electron-builder --win zip --publish never"
+  },
+  "build": {
+  "productName": "SummerPhantasm",
+  "artifactName": "SummerPhantasm-${version}-${arch}.${ext}",
+  "files": [
+    "index.html",
+    "assets/**",
+    "data/**",
+    "js/**",
+    "minigames/**",
+    "team/**",
+    "electron-main.js",
+    "preload.js"
+  ],
+  "directories": { "buildResources": "build" },
+
+  "compression": "store",
+  "asar": false,
+  "win": {
+    "target": [{ "target": "zip", "arch": ["x64"] }],
+    "icon": "build/icon.ico"
+  }
+},
+  "devDependencies": {
+    "electron": "^38.2.2",
+    "electron-builder": "^26.0.12"
+  }
+}
