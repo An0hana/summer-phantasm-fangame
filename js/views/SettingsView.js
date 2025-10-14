@@ -20,6 +20,7 @@ const SettingsView = {
                     backdrop-filter: blur(8px);
                     -webkit-backdrop-filter: blur(8px);
                     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+                    position: relative; /* allow absolute-positioned close button */
                 }
                 .settings-panel h2 {
                     text-align: center;
@@ -82,6 +83,27 @@ const SettingsView = {
                     transform: scale(0.985);
                     box-shadow: 0 3px 8px rgba(0,0,0,0.45) inset;
                 }
+                /* 右上角关闭按钮 */
+                .settings-close {
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 6px;
+                    background: transparent;
+                    border: none;
+                    color: #fff;
+                    font-size: 28px;
+                    line-height: 1;
+                    cursor: pointer;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background .12s ease, transform .12s ease;
+                }
+                .settings-close:hover { background: rgba(255,255,255,0.04); transform: scale(1.04); }
+                .settings-close:active { transform: scale(0.98); }
                 /* 仅针对退出登录和返回按钮的文字大小调整，保持一致 */
                 #logout-btn a,
                 #back-to-menu-btn a {
@@ -91,6 +113,7 @@ const SettingsView = {
             <div class="view settings-view">
                 <div class="bg" style="background-image: url('./assets/img/bgr/mainmenu.png');"></div>
                 <div class="settings-panel">
+                    <button id="settings-close" class="settings-close" aria-label="关闭">×</button>
                     <h2>设置</h2>
                     <div class="setting-item">
                         <label for="bgm-volume">背景音乐</label>
@@ -114,11 +137,12 @@ const SettingsView = {
             </div>
         `;
     },
-    attachEventListeners: (container, engine) => {
+    attachEventListeners: (container, engine, params = {}) => {
         const bgmSlider = document.getElementById('bgm-volume');
         const voiceSlider = document.getElementById('voice-volume');
         const logoutBtn = document.getElementById('logout-btn');
         const backBtn = document.getElementById('back-to-menu-btn');
+    const closeBtn = document.getElementById('settings-close');
 
         // 实时更新音量
         bgmSlider.addEventListener('input', () => {
@@ -176,6 +200,33 @@ const SettingsView = {
         container.querySelectorAll('.settings-button').forEach(button => {
             button.addEventListener('mouseover', () => engine.audioManager.playSoundEffect('hover'));
         });
+
+        // 右上角关闭 × 按钮：若来自游戏（params.from==='Game'）则 resume；若来自主菜单则返回上一个菜单
+        if (closeBtn) {
+            closeBtn.setAttribute('role', 'button');
+            closeBtn.setAttribute('tabindex', '0');
+            closeBtn.addEventListener('click', async (e) => {
+                if (e) e.stopPropagation();
+                try { engine.audioManager.playSoundEffect('click'); } catch (ex) {}
+                const from = params && params.from ? params.from : null;
+                if (from === 'Game') {
+                    // 从游戏中打开设置：行为等同继续游戏
+                    if (typeof engine.resumeGame === 'function') {
+                        try { await engine.resumeGame(); }
+                        catch (err) {
+                            console.error('resumeGame failed from settings close:', err);
+                            if (typeof engine.startNewGame === 'function') engine.startNewGame();
+                        }
+                    } else if (typeof engine.startNewGame === 'function') {
+                        engine.startNewGame();
+                    }
+                } else {
+                    // 默认行为：返回到主菜单（或上一个菜单）
+                    engine.showView('MainMenu');
+                }
+            });
+            closeBtn.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); closeBtn.click(); } });
+        }
     }
 };
 

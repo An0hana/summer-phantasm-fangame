@@ -52,8 +52,8 @@ const AchievementView = {
                     position: sticky;
                     top: 0;
                     z-index: 20;
-                    background: rgba(0, 0, 0, 0.6);
-                    backdrop-filter: blur(4px);
+                    background: transparent; /* 由用户要求改为透明 */
+                    backdrop-filter: none; /* 禁用额外的模糊遮罩 */
                 }
 
                 .menu-button {

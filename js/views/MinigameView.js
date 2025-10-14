@@ -257,7 +257,7 @@ const MinigameView = {
             if (MinigameView.gameInstance) {
                 MinigameView.gameInstance.pause();
             }
-            engine.showView('Load');
+            engine.showView('Load', { from: 'Minigame' });
         });
     }
 };

@@ -21,7 +21,7 @@
       "gameId": "platformer",
       "level": "level1.json",
       "timeLimit": 30,
-      "introText": "孤独与茫然笼罩了心灵与梦境，漫没黑水的海洋中，葵在苦苦挣扎",
+      "introText": "孤独与茫然笼罩了心灵与梦境，漫没黑水的海洋中，葵在苦苦挣扎（游戏输赢影响剧情走向）",
       "resultTitle": "任务结果",
       "winCondition": {
         "type": "collect",
@@ -43,7 +43,7 @@
       "gameId": "platformer",
       "level": "level2.json",
       "timeLimit": 25,
-      "introText": "对于过去那场事故，绚音的记忆很模糊，在黑暗的时光里追寻那些记忆吧",
+      "introText": "对于过去那场事故，绚音的记忆很模糊，在黑暗的时光里追寻那些记忆吧（游戏输赢影响剧情走向）",
       "resultTitle": "任务结果",
       "winCondition": {
         "type": "collect",
@@ -65,7 +65,7 @@
       "gameId": "platformer",
       "level": "level3.json",
       "timeLimit": 25,
-      "introText": "葵的内心发生了动摇，所谓意义，究竟为何物，她需要足够的“打扰”他们寻求安慰的理由.",
+      "introText": "葵的内心发生了动摇，所谓意义，究竟为何物，她需要足够的“打扰”他们寻求安慰的理由.（游戏输赢影响剧情走向）",
       "resultTitle": "任务结果",
       "winCondition": {
         "type": "collect",
@@ -86,8 +86,8 @@
       "type": "minigame",
       "gameId": "platformer",
       "level": "level4.json",
-      "timeLimit": 35,
-      "introText": "搜集其他与事故有关的线索，找到遗忘在历史中的记忆.",
+      "timeLimit": 30,
+      "introText": "搜集其他与事故有关的线索，找到遗忘在历史中的记忆.（游戏输赢影响剧情走向）",
       "resultTitle": "任务结果",
       "winCondition": {
         "type": "collect",
@@ -100,7 +100,7 @@
         },
         "lose": {
           "targetNode": 40311,
-          "outroText": "岁月的尘埃被洗刷干净，真相被埋葬在旧日的痕迹中，迷雾笼罩了正义与窥秘人的双眼"
+          "outroText": "岁月的尘埃被洗刷干净，真相被埋葬在旧日的痕迹中，迷雾笼罩了正义与窥秘人的双眼（相信我，能跳过去的，作者自己玩了六七次就过去了~）"
         }
       }
     },
@@ -18976,7 +18976,7 @@
       "voice": "50003",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "yanhua1",
+      "bgr": "补充23",
       "bgm": "null",
       "onNext": {
         "nextNode": true
@@ -18987,7 +18987,7 @@
       "voice": "50004",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "yanhua1",
+      "bgr": "补充23",
       "bgm": "null",
       "onNext": {
         "nextNode": true
@@ -18997,7 +18997,7 @@
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50005",
-      "bgr": "yanhua1",
+      "bgr": "补充23",
       "bgm": "null",
       "lCharactor": "",
       "onNext": {
@@ -19283,56 +19283,42 @@
       "type": "text",
       "voice": "50031",
       "name": "tomoya",
-      "rCharactor": "youye_mengjing",
-      "bgr": "yanhua5",
+      "bgr": "补充24",
       "bgm": "kanong",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50032": {
       "type": "text",
       "voice": "50032",
       "name": "ayane",
-      "lCharactor": "xuanyin_mengjing",
-      "bgr": "yanhua5",
+      "bgr": "补充24",
       "bgm": "kanong",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50033": {
       "type": "text",
       "voice": "50033",
       "name": "aoi",
-      "lCharactor": "kui_mengjing",
-      "bgr": "yanhua5",
+      "bgr": "补充24",
       "bgm": "kanong",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50034": {
       "type": "text",
       "voice": "50034",
       "name": "ryo",
-      "lCharactor": "liang_mengjing",
-      "bgr": "yanhua5",
+      "bgr": "补充24",
       "bgm": "kanong",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50035": {
       "type": "text",
       "voice": "50035",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "yanhua5",
+      "bgr": "补充24",
       "bgm": "kanong",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50036": {
       "type": "animation",
@@ -19516,33 +19502,27 @@
       "voice": "50052",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "tushuguan5",
+      "bgr": "补充25",
       "bgm": "qingtengsezhongxia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50053": {
       "type": "text",
       "voice": "50053",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "tushuguan5",
+      "bgr": "补充25",
       "bgm": "qingtengsezhongxia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50054": {
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50054",
-      "bgr": "tushuguan5",
+      "bgr": "补充25",
       "bgm": "qingtengsezhongxia",
-      "rCharactor": "",
-      "onNext": {
-        "nextNode": true
-      }
+      "rCharactor":"",
+      "onNext": { "nextNode": true }
     },
     "50055": {
       "type": "animation",
@@ -19691,45 +19671,36 @@
       "type": "text",
       "voice": "50068",
       "name": "narrator",
-      "lCharactor": "",
+      "lCharactor": "zahuodianlaoban",
       "bgr": "shipindian",
       "bgm": "qingtengsezhongxia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50069": {
       "type": "text",
       "voice": "50069",
       "name": "aoi",
-      "rCharactor": "kui_dongri",
-      "bgr": "shipindian",
+      "bgr": "补充26",
       "bgm": "qingtengsezhongxia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50070": {
       "type": "text",
       "voice": "50070",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "shipindian",
+      "bgr": "补充26",
       "bgm": "qingtengsezhongxia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50071": {
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50071",
-      "bgr": "shipindian",
+      "bgr": "补充26",
       "bgm": "qingtengsezhongxia",
-      "rCharactor": "",
-      "onNext": {
-        "nextNode": true
-      }
+      "rCharactor":"",
+      "onNext": { "nextNode": true }
     },
     "50072": {
       "type": "text",
@@ -20071,44 +20042,36 @@
       "voice": "50102",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "xiaoxiang1",
+      "bgr": "补充27",
       "bgm": "nixuan",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50103": {
       "type": "text",
       "voice": "50103",
       "name": "aoi",
-      "rCharactor": "kui_dongri",
-      "bgr": "xiaoxiang1",
+      "rCharactor": "葵_冬日",
+      "bgr": "补充27",
       "bgm": "nixuan",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50104": {
       "type": "text",
       "voice": "50104",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "xiaoxiang1",
+      "bgr": "补充27",
       "bgm": "nixuan",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50105": {
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50105",
-      "bgr": "xiaoxiang1",
+      "bgr": "补充27",
       "bgm": "nixuan",
-      "rCharactor": "maomao",
-      "onNext": {
-        "nextNode": true
-      }
+      "rCharactor": "猫猫",
+      "onNext": { "nextNode": true }
     },
     "50106": {
       "type": "animation",
@@ -20179,34 +20142,28 @@
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50112",
-      "bgr": "jiaoshi1",
+      "bgr": "补充28",
       "bgm": "nixuan",
-      "lCharactor": "",
-      "onNext": {
-        "nextNode": true
-      }
+      "lCharactor":"",
+      "onNext": { "nextNode": true }
     },
     "50113": {
       "type": "text",
       "voice": "50113",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "jiaoshi1",
+      "bgr": "补充28",
       "bgm": "nixuan",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50114": {
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50114",
-      "bgr": "jiaoshi1",
+      "bgr": "补充28",
       "bgm": "jieshu",
-      "rCharactor": "",
-      "onNext": {
-        "nextNode": true
-      }
+      "rCharactor":"",
+      "onNext": { "nextNode": true }
     },
     "50115": {
       "type": "text",
@@ -20400,34 +20357,28 @@
       "voice": "50132",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "gongyuan4",
+      "bgr": "补充29",
       "bgm": "jieshu",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50133": {
       "type": "text",
       "voice": "50133",
       "name": "narrator",
       "lCharactor": "",
-      "unlockAchievement": "aiyisuifengqi",
-      "bgr": "gongyuan4",
+      "unlockAchievement":"aiyisuifengqi",
+      "bgr": "补充29",
       "bgm": "jieshu",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50134": {
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50134",
-      "bgr": "gongyuan4",
+      "bgr": "补充29",
       "bgm": "jieshu",
-      "rCharactor": "",
-      "onNext": {
-        "nextNode": true
-      }
+      "rCharactor":"",
+      "onNext": { "nextNode": true }
     },
     "50135": {
       "type": "text",
@@ -20940,44 +20891,33 @@
       "voice": "50181",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "yuyechengshi1",
+      "bgr": "补充30",
       "bgm": "luoyinggu",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50182": {
       "type": "text",
       "voice": "50182",
       "name": "aoi",
-      "lCharactor": "kui_mengjing",
-      "bgr": "yuyechengshi1",
+      "bgr": "补充30",
       "bgm": "luoyinggu",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50183": {
       "type": "text",
       "voice": "50183",
       "name": "ryo",
-      "rCharactor": "liang_mengjing",
-      "bgr": "yuyechengshi1",
+      "bgr": "补充30",
       "bgm": "luoyinggu",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50184": {
       "type": "text",
       "voice": "50184",
       "name": "aoi",
-      "lCharactor": "kui_mengjing",
-      "bgr": "yuyechengshi1",
+      "bgr": "补充30",
       "bgm": "luoyinggu",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50185": {
       "type": "text",
@@ -21381,44 +21321,36 @@
       "voice": "50221",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "shatan2",
+      "bgr": "补充31",
       "bgm": "haiming",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50222": {
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50222",
-      "bgr": "shatan2",
+      "bgr": "补充31",
       "bgm": "haiming",
-      "rCharactor": "",
-      "onNext": {
-        "nextNode": true
-      }
+      "rCharactor":"",
+      "onNext": { "nextNode": true }
     },
     "50223": {
       "type": "text",
       "voice": "50223",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "shatan2",
+      "bgr": "补充31",
       "bgm": "haiming",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50224": {
       "type": "text",
       "voice": "50224",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "shatan2",
+      "bgr": "补充31",
       "bgm": "haiming",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50225": {
       "type": "animation",
@@ -21480,44 +21412,34 @@
       "voice": "50230",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "kafeiguan4",
+      "bgr": "补充32",
       "bgm": "jijinglieche",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50231": {
       "type": "text",
       "voice": "50231",
       "name": "tomoya",
-      "rCharactor": "youye_mengjing",
-      "bgr": "kafeiguan4",
+      "bgr": "补充32",
       "bgm": "jijinglieche",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50232": {
       "type": "text",
       "voice": "50232",
       "name": "ayane",
-      "lCharactor": "xuanyin_mengjing",
-      "bgr": "kafeiguan4",
+      "bgr": "补充32",
       "bgm": "jijinglieche",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50233": {
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50233",
-      "bgr": "kafeiguan4",
+      "bgr": "补充32",
       "bgm": "jijinglieche",
-      "rCharactor": "",
-      "onNext": {
-        "nextNode": true
-      }
+      "rCharactor":"",
+      "onNext": { "nextNode": true }
     },
     "50234": {
       "type": "text",
@@ -21722,45 +21644,35 @@
       "type": "animation",
       "name": "fadeInBlack",
       "voice": "50252",
-      "bgr": "ditie",
+      "bgr": "补充33",
       "bgm": "jijinglieche",
-      "rCharactor": "",
-      "onNext": {
-        "nextNode": true
-      }
+      "rCharactor":"",
+      "onNext": { "nextNode": true }
     },
     "50253": {
       "type": "text",
       "voice": "50253",
       "name": "narrator",
       "lCharactor": "",
-      "bgr": "ditie",
+      "bgr": "补充33",
       "bgm": "jijinglieche",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50254": {
       "type": "text",
       "voice": "50254",
       "name": "tomoya",
-      "lCharactor": "youye_mengjing",
-      "bgr": "ditie",
+      "bgr": "补充33",
       "bgm": "jijinglieche",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50255": {
       "type": "text",
       "voice": "50255",
       "name": "ayane",
-      "lCharactor": "xuanyin_mengjing",
-      "bgr": "ditie",
+      "bgr": "补充33",
       "bgm": "jijinglieche",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50256": {
       "type": "text",
@@ -22141,56 +22053,45 @@
       "voice": "50290",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "chengshijiaoqu2",
+      "bgr": "补充34",
       "bgm": "qingshixiang",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50291": {
       "type": "text",
       "voice": "50291",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "chengshijiaoqu2",
+      "bgr": "补充34",
       "bgm": "qingshixiang",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50292": {
       "type": "text",
       "voice": "50292",
       "name": "ayane",
-      "lCharactor": "xuanyin_mengjing",
-      "bgr": "chengshijiaoqu2",
+      "bgr": "补充34",
       "bgm": "qingshixiang",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50293": {
       "type": "text",
       "voice": "50293",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "chengshijiaoqu2",
+      "bgr": "补充34",
       "bgm": "qingshixiang",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50294": {
       "type": "text",
       "voice": "50294",
       "name": "narrator",
       "rCharactor": "",
-      "unlockAchievement": "shequzhuangdianjia",
-      "bgr": "chengshijiaoqu2",
+      "unlockAchievement":"shequzhuangdianjia",
+      "bgr": "补充34",
       "bgm": "qingshixiang",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50295": {
       "type": "text",
@@ -22527,56 +22428,42 @@
       "type": "text",
       "voice": "50325",
       "name": "tomoya",
-      "lCharactor": "youye_mengjing",
-      "bgr": "lieche2",
+      "bgr": "补充35",
       "bgm": "huijia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50326": {
       "type": "text",
       "voice": "50326",
       "name": "ayane",
-      "lCharactor": "xuanyin_mengjing",
-      "bgr": "lieche2",
+      "bgr": "补充35",
       "bgm": "huijia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50327": {
       "type": "text",
       "voice": "50327",
       "name": "aoi",
-      "lCharactor": "kui_mengjing",
-      "bgr": "lieche2",
+      "bgr": "补充35",
       "bgm": "huijia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50328": {
       "type": "text",
       "voice": "50328",
       "name": "ryo",
-      "rCharactor": "liang_mengjing",
-      "bgr": "lieche2",
+      "bgr": "补充35",
       "bgm": "huijia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50329": {
       "type": "text",
       "voice": "50329",
       "name": "narrator",
       "rCharactor": "",
-      "bgr": "lieche2",
+      "bgr": "补充35",
       "bgm": "huijia",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50330": {
       "type": "animation",
@@ -23355,12 +23242,9 @@
       "type": "text",
       "voice": "50400",
       "name": "ryo",
-      "rCharactor": "liang_mengjing",
-      "bgr": "yanhua12",
+      "bgr": "补充22",
       "bgm": "xiayeyanhuo",
-      "onNext": {
-        "nextNode": true
-      }
+      "onNext": { "nextNode": true }
     },
     "50401": {
       "type": "text",

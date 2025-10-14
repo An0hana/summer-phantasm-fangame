@@ -2,9 +2,10 @@ const LoadView = {
     totalSlots: 30, // 固定存档槽数量
 
     // 渲染函数：生成并插入存档界面的 HTML 结构
-    render: (container, engine) => {
+    render: (container, engine, params = {}) => {
         const L = engine.localization; // 本地化工具
         const saves = engine.saveManager.currentUser.saveArray;
+        const from = params && params.from ? params.from : null;
 
         // 主体界面 HTML
         container.innerHTML = `
@@ -18,6 +19,13 @@ const LoadView = {
                         <img class="button-img" src="./assets/img/button.png">
                         <a>存档系统</a>
                     </span>
+
+                    ${from === 'MainMenu' ? '' : `
+                    <button id="resume-btn" class="main-menu-button" style="background:none;border:none;font-family: 'lilyshow', 'FangSong', '仿宋', 'SimSun', sans-serif;">
+                        <img class="button-img" src="./assets/img/button.png">
+                        <a>${L.get('ui.continue')}</a>
+                    </button>
+                    `}
                     
                     <button id="back-to-menu" class="main-menu-button" style="background:none;border:none;font-family: 'lilyshow', 'FangSong', '仿宋', 'SimSun', sans-serif;">
                         <img class="button-img" src="./assets/img/button.png">
@@ -68,13 +76,32 @@ const LoadView = {
             slotsContainer.appendChild(slot);
         }
 
-        // 绑定事件
-        LoadView.attachEventListeners(container, engine);
+        // 绑定事件（传入 params 以便事件处理器知道来源）
+        LoadView.attachEventListeners(container, engine, params);
     },
 
     // 绑定全局事件监听器
-    attachEventListeners: (container, engine) => {
-        document.getElementById('back-to-menu').addEventListener('click', () => engine.showView('MainMenu'));
+    attachEventListeners: (container, engine, params = {}) => {
+        const backBtn = document.getElementById('back-to-menu');
+        if (backBtn) backBtn.addEventListener('click', () => engine.showView('MainMenu'));
+
+        const resumeBtn = document.getElementById('resume-btn');
+        if (resumeBtn) {
+            resumeBtn.addEventListener('click', async () => {
+                try { engine.audioManager.playSoundEffect && engine.audioManager.playSoundEffect('click'); } catch (e) {}
+                // 恢复优先：尝试 resumeGame，若不可用或抛错则回退为 startNewGame
+                if (typeof engine.resumeGame === 'function') {
+                    try {
+                        await engine.resumeGame();
+                    } catch (e) {
+                        console.error('resumeGame failed:', e);
+                        if (typeof engine.startNewGame === 'function') engine.startNewGame();
+                    }
+                } else if (typeof engine.startNewGame === 'function') {
+                    engine.startNewGame();
+                }
+            });
+        }
 
         // 给存档槽按钮绑定事件
         LoadView.bindSlotButtons(container, engine);

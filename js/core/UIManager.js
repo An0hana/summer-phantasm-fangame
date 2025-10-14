@@ -2,11 +2,40 @@ export default class UIManager {
     constructor(engine) {
         this.engine = engine;
         this.sentencePrinter = null;
+        // 绑定全局 Esc 键以退出全屏（如果当前处于全屏）
+        this.__onGlobalKeydown = (e) => {
+            try {
+                if (e.key === 'Escape' || e.key === 'Esc') {
+                    if (document.fullscreenElement) {
+                        document.exitFullscreen().catch(() => {});
+                    }
+                }
+            } catch (err) { /* ignore */ }
+        };
+        if (typeof window !== 'undefined' && window.addEventListener) {
+            window.addEventListener('keydown', this.__onGlobalKeydown, { passive: true });
+        }
     }
 
     clearContainer() {
         this.engine.container.innerHTML = '';
         this.sentencePrinter = null;
+        // 清理可能注册的全局监听器
+        try {
+            if (this.__onGlobalKeydown && typeof window !== 'undefined' && window.removeEventListener) {
+                window.removeEventListener('keydown', this.__onGlobalKeydown, { passive: true });
+            }
+        } catch (e) { /* ignore */ }
+    }
+
+    // 对外提供 dispose 方法以便显式移除全局监听器
+    dispose() {
+        try {
+            if (this.__onGlobalKeydown && typeof window !== 'undefined' && window.removeEventListener) {
+                window.removeEventListener('keydown', this.__onGlobalKeydown, { passive: true });
+                this.__onGlobalKeydown = null;
+            }
+        } catch (e) { /* ignore */ }
     }
     
     renderNode(node) {
@@ -158,7 +187,8 @@ export default class UIManager {
                 menu.querySelector('[data-action="save_load"]').addEventListener('click', () => { 
                     this.engine.audioManager.playSoundEffect('click'); 
                     this.engine.unpauseGame(); 
-                    this.engine.showView('Load'); 
+                    // 从游戏内暂停菜单打开存档，标记为 Submenu（副菜单）
+                    this.engine.showView('Load', { from: 'Submenu' }); 
                 });
                 menu.querySelector('[data-action="fullscreen"]').addEventListener('click', () => { 
                     this.engine.audioManager.playSoundEffect('click'); 

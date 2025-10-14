@@ -467,7 +467,7 @@ const GameView = {
             const activateSave = (e) => {
                 if (e) e.stopPropagation();
                 engine.audioManager.playSoundEffect('click');
-                engine.showView('Load');
+                engine.showView('Load', { from: 'Game' });
             };
             saveBtn.addEventListener('click', activateSave);
             saveBtn.addEventListener('touchstart', (e) => { e.stopPropagation(); e.currentTarget.classList.add('pressed'); }, {passive:true});
@@ -530,7 +530,7 @@ const GameView = {
             settingsBtn.setAttribute('role', 'button');
             settingsBtn.setAttribute('tabindex', '0');
             settingsBtn.setAttribute('aria-label', '打开设置');
-            const activateSettings = (e) => { if (e) e.stopPropagation(); engine.audioManager.playSoundEffect('click'); engine.showView('Settings'); };
+            const activateSettings = (e) => { if (e) e.stopPropagation(); engine.audioManager.playSoundEffect('click'); engine.showView('Settings', { from: 'Game' }); };
             settingsBtn.addEventListener('click', activateSettings);
             settingsBtn.addEventListener('touchstart', (e) => { e.stopPropagation(); e.currentTarget.classList.add('pressed'); }, {passive:true});
             settingsBtn.addEventListener('touchend', (e) => { e.stopPropagation(); e.currentTarget.classList.remove('pressed'); activateSettings(e); });

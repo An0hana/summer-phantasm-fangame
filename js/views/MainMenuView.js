@@ -315,8 +315,8 @@ const MainMenuView = {
         switch (action) {
           case 'continue': engine.resumeGame(); break;
           case 'start': engine.startNewGame(); break;
-          case 'load': engine.showView('Load'); break;
-          case 'settings': engine.showView('Settings'); break;
+          case 'load': engine.showView('Load', { from: 'MainMenu' }); break;
+          case 'settings': engine.showView('Settings', { from: 'MainMenu' }); break;
           case 'achievement': engine.showView('Achievement'); break;
           case 'about': engine.showView('About'); break;
         }
